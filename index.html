@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Wasay - UI/UX Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/components/hero.css">
+    <link rel="stylesheet" href="styles/components/about.css">
+    <link rel="stylesheet" href="styles/components/skills.css">
+    <link rel="stylesheet" href="styles/components/projects.css">
+    <link rel="stylesheet" href="styles/components/contact.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="js/particles-config.js" defer></script>
+    <script src="js/theme.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/loader.js" defer></script>
+    <script src="js/animations.js" defer></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">AW.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+        <div class="nav-toggle">
+            <div class="hamburger"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="hero-title glitch" data-text="Abdul Wasay">Abdul Wasay</h1>
+            <h2 class="hero-subtitle"><span class="typed-text"></span></h2>
+            <p class="hero-description">Crafting beautiful and intuitive digital experiences through modern UI/UX design.</p>
+            <div class="cta-container">
+                <a href="#projects" class="cta-button cta-primary">View My Work</a>
+                <a href="#contact" class="cta-button cta-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate UI/UX Developer with a keen eye for creating beautiful and functional digital experiences. With expertise in modern design principles and development technologies, I transform complex ideas into intuitive interfaces that users love.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">1+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">41+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fas fa-palette"></i>
+                <h3>UI Design</h3>
+                <p>Creating beautiful and intuitive user interfaces</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="transform: scaleX(0.95);"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fas fa-users"></i>
+                <h3>UX Design</h3>
+                <p>Crafting seamless user experiences</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="transform: scaleX(0.90);"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and modern websites</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="transform: scaleX(0.85);"></div>
+                </div>
+            </div>
+            <div class="skill-card" data-aos="flip-left">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Creating adaptive layouts for all devices</p>
+                <div class="skill-progress">
+                    <div class="progress-bar" style="transform: scaleX(0.92);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Recent Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Screenshot 2024-11-28 012842.png" alt="Image Not Found">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://demo-project2-ten.vercel.app/" class="project-link" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/MohammedDaniyalRaza/source-codes.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">A Beautiful Responsive Portfolio Website With Attractive UI & 3d Design</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML & CSS</span>
+                        <span class="project-tag">Java Script</span>
+                        <span class="project-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Screenshot 2024-11-28 013955.png" alt="Portfolio Dashboard">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://static-dashbord-abdul-wasay.vercel.app/" class="project-link" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/MohammedDaniyalRaza/source-codes.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Static Dashobord</h3>
+                    <p class="project-description">An interactive static dashboard for tracking and managing investment.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML5</span>
+                        <span class="project-tag">CSS & Tailwind</span>
+                        <span class="project-tag">Java Script</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Screenshot 2024-11-28 013356.png" alt="AI Chat Application">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://demo-project1-seven.vercel.app/" class="project-link" target="_blank"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/MohammedDaniyalRaza/source-codes.git" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Personal Portfolio</h3>
+                    <p class="project-description">Beautiful Fully Animated Interective Resposive Personal Portfolio Website</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">Java Script</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-form">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="c4241d83-2ec3-4ca5-9569-f902626cdac2">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-input" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-input form-textarea" name="message" required></textarea>
+                </div>
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/xx._.smartyyy/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/sinceauraagency?t=GSJnc39_tP2FGx6hW6O0fQ&s=08" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        // Initialize Typed.js
+        new Typed('.typed-text', {
+            strings: ['UI/UX Developer', 'Web Designer', 'Creative Thinker'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true
+        });
+    </script>
+</body>
+</html>
